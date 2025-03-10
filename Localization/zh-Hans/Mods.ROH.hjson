@@ -1,0 +1,43 @@
+Configs: {
+	ClientConfig: {
+		JourneyResearchCraftable: {
+			Tooltip: ""
+			Label: Journey Research Craftable
+		}
+
+		JourneyAutoResearch: {
+			Tooltip: ""
+			Label: Journey Auto Research
+		}
+
+		DisplayName: Client Config
+
+		DisplayProjectileName: {
+			// Label: Display Projectile Name
+			// Tooltip: ""
+		}
+
+		ProjectileTextColor: {
+			// Label: Projectile Text Color
+			// Tooltip: ""
+		}
+
+		ProjectileBorderColor: {
+			// Label: Projectile Border Color
+			// Tooltip: ""
+		}
+
+		FavoriteColor: {
+			// Label: Favorite Color
+			// Tooltip: ""
+		}
+	}
+}
+
+Keybinds: {
+	ResearchKey.DisplayName: 研究
+	SacrificeKey.DisplayName: 自杀
+	// ProjectileListKey.DisplayName: Projectile List Key
+}
+
+DeathMessage.Sacrifice: "{0}自杀了。"
