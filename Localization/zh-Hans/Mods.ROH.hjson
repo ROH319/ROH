@@ -2,34 +2,34 @@ Configs: {
 	ClientConfig: {
 		JourneyResearchCraftable: {
 			Tooltip: ""
-			Label: Journey Research Craftable
+			Label: 旅行模式自动研究可合成
 		}
 
 		JourneyAutoResearch: {
 			Tooltip: ""
-			Label: Journey Auto Research
+			Label: 旅行模式自动研究
 		}
 
 		DisplayName: Client Config
 
 		DisplayProjectileName: {
-			// Label: Display Projectile Name
-			// Tooltip: ""
+			Label: 显示弹幕名称
+			Tooltip: ""
 		}
 
 		ProjectileTextColor: {
-			// Label: Projectile Text Color
-			// Tooltip: ""
+			Label: 弹幕显示字体颜色
+			Tooltip: ""
 		}
 
 		ProjectileBorderColor: {
-			// Label: Projectile Border Color
-			// Tooltip: ""
+			Label: 弹幕显示字体描边颜色
+			Tooltip: ""
 		}
 
 		FavoriteColor: {
-			// Label: Favorite Color
-			// Tooltip: ""
+			Label: Favorite Color
+			Tooltip: ""
 		}
 	}
 }
@@ -37,7 +37,7 @@ Configs: {
 Keybinds: {
 	ResearchKey.DisplayName: 研究
 	SacrificeKey.DisplayName: 自杀
-	// ProjectileListKey.DisplayName: Projectile List Key
+	ProjectileListKey.DisplayName: 实体列表
 }
 
 DeathMessage.Sacrifice: "{0}自杀了。"
