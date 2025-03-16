@@ -11,7 +11,7 @@ namespace ROH.Common.UI.Elements.EntityElements
     public class ProjectileIDElement : EntityElement
     {
         public override bool IsActive() => true;
-        public override object GetObject() => new ProjectileID.Sets();
+        public override object GetObject() => null;
         public override string GetObjectName() => "ProjectileID";
         public ProjectileIDElement(float width, int index) : base(width, index)
         {

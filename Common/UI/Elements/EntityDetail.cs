@@ -44,7 +44,8 @@ namespace ROH.Common.UI.Elements
             OverflowHidden = false;
             Vector2 offset = new(Main.screenWidth / 2f - BackWidth / 2f, Main.screenHeight / 2f - BackHeight / 2f);
             Scrollbar.SetView(400, 1000);
-            Scrollbar.Width.Set(20, 0);
+            Scrollbar.Width.Set(30, 0);
+            Scrollbar.MarginRight = 4;
             Scrollbar.OverflowHidden = true;
             Scrollbar.OnScrollWheel += HotbarScrollFix;
 
@@ -72,7 +73,7 @@ namespace ROH.Common.UI.Elements
             MemberList.Height.Set(InnerPanel.Height.Pixels - PaddingTop * 2f, 0);
 
             Scrollbar.Height.Set(InnerPanel.Height.Pixels - 16, 0);
-            Scrollbar.Left.Set(InnerPanel.Width.Pixels - Scrollbar.Width.Pixels - 18, 0);
+            //Scrollbar.Left.Set(InnerPanel.Width.Pixels - Scrollbar.Width.Pixels - 18, 0);
 
             Append(InnerPanel);
             Append(CloseButton);

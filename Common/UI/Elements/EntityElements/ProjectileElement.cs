@@ -2,7 +2,7 @@
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Graphics;
 using ROH.Common.Helpers;
-using ROH.Projectiles;
+using ROH.Globals;
 using System;
 using System.Collections.Generic;
 using System.Linq;

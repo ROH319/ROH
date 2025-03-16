@@ -10,7 +10,7 @@ using Terraria.DataStructures;
 using Terraria.GameContent;
 using Terraria.ModLoader;
 
-namespace ROH.Projectiles
+namespace ROH.Globals
 {
     public class ROHGlobalProjectile : GlobalProjectile
     {
