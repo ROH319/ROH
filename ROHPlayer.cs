@@ -50,13 +50,13 @@ namespace ROH
         }
         public PlayerDeathReason DeathByLocalization(string key)
         {
-            return PlayerDeathReason.ByCustomReason(Language.GetTextValue($"Mods.ROH.DeathMessage.{key}", Player.name));
+            return PlayerDeathReason.ByCustomReason(NetworkText.FromKey($"Mods.ROH.DeathMessage.{key}", Player.name));
         }
         public override void ProcessTriggers(TriggersSet triggersSet)
         {
             if(ROH.ResearchKey.JustPressed)
             {
-                if (ClientConfig.Instance.JourneyAutoResearch && Main.LocalPlayer.difficulty is PlayerDifficultyID.Creative)
+                if (ServerConfig.Instance.JourneyAutoResearch && Main.LocalPlayer.difficulty is PlayerDifficultyID.Creative)
                 {
                     string researchedItems = "";
                     bool hasItemResearched = false;
@@ -81,7 +81,7 @@ namespace ROH
                     }
                 }
 
-                if (ClientConfig.Instance.JourneyResearchCraftable && Main.LocalPlayer.difficulty is PlayerDifficultyID.Creative)
+                if (ServerConfig.Instance.JourneyResearchCraftable && Main.LocalPlayer.difficulty is PlayerDifficultyID.Creative)
                 {
                     bool needResearchAgain = true;
                     bool hasItemResearched = false;

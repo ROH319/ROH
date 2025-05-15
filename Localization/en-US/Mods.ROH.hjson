@@ -31,6 +31,35 @@ Configs: {
 			Label: Favorite Color
 			Tooltip: ""
 		}
+
+		GlobalProjectileAlpha: {
+			Label: Global Projectile Alpha
+			Tooltip: ""
+		}
+
+		ModProjectileAlpha: {
+			Label: Mod Projectile Alpha
+			Tooltip: ""
+		}
+
+		DisplayUseAmmo: {
+			Label: Display Use Ammo
+			Tooltip: ""
+		}
+	}
+
+	ServerConfig: {
+		DisplayName: Server Config
+
+		JourneyAutoResearch: {
+			Label: Journey Auto Research
+			Tooltip: ""
+		}
+
+		JourneyResearchCraftable: {
+			Label: Journey Research Craftable
+			Tooltip: ""
+		}
 	}
 }
 
@@ -40,4 +69,5 @@ Keybinds: {
 	ProjectileListKey.DisplayName: Projectile List Key
 }
 
+Items.Extra.UseAmmo: UseAmmo
 DeathMessage.Sacrifice: "{0} sacrificed."

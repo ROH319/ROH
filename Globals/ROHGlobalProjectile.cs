@@ -33,6 +33,26 @@ namespace ROH.Globals
             base.PostAI(projectile);
         }
 
+        public override Color? GetAlpha(Projectile projectile, Color lightColor)
+        {
+            if(!projectile.hostile && (ClientConfig.Instance.GlobalProjectileAlpha < 1f || ClientConfig.Instance.ModProjectileAlpha < 1f))
+            {
+                Color? color = projectile.ModProjectile?.GetAlpha(lightColor);
+                if(color != null)
+                {
+                    Color newcolor = color.Value;
+                    if(projectile.ModProjectile != null)
+                        newcolor *= ClientConfig.Instance.ModProjectileAlpha;
+                    return newcolor * ClientConfig.Instance.GlobalProjectileAlpha;
+                }
+                lightColor *= projectile.Opacity * ClientConfig.Instance.GlobalProjectileAlpha;
+                if(projectile.ModProjectile != null)
+                    lightColor *= ClientConfig.Instance.ModProjectileAlpha;
+                return lightColor;
+            }
+            return base.GetAlpha(projectile, lightColor);
+        }
+
         public override void PostDraw(Projectile projectile, Color lightColor)
         {
             if (ClientConfig.Instance.DisplayProjectileName)
